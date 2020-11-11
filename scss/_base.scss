@@ -29,8 +29,13 @@
     max-width: 1640px;
     margin: 0 auto;
   }
+
   .orange {
     color: $color-orange;
+  }
+
+  .row{
+    display: flex;
   }
   
   .btn {

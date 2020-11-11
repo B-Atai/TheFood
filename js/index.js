@@ -79,64 +79,29 @@ function timer() {
     x: -20,
     ease: Expo.easeInOut,
   });
-
-  TweenMax.from('.title', 1, {
-    delay: 1,
-    opacity: 0,
-    y: 20,
-    ease: Expo.easeInOut,
-  });
-  TweenMax.from('.tagline', 1, {
-    delay: 1.3,
-    opacity: 0,
-    y: 20,
-    ease: Expo.easeInOut,
-  });
-
-  TweenMax.from('.pages', 1, {
-    delay: 1,
-    opacity: 0,
-    y: 20,
-    ease: Expo.easeInOut,
-  });
-
-  TweenMax.from('.more', 1, {
-    delay: 1.4,
-    opacity: 0,
-    y: 20,
-    ease: Expo.easeInOut,
-  });
-
-  TweenMax.from('.desc', 1, {
-    delay: 1.4,
-    opacity: 0,
-    y: 20,
-    ease: Expo.easeInOut,
-  });
-
-  TweenMax.from('.arrows', 1, {
-    delay: 1.4,
-    opacity: 0,
-    ease: Expo.easeInOut,
-  });
 }
 
 setTimeout(timer, 500)
 
 TweenMax.to('.over-1', 1, {
   delay: 0.3,
-  y: -1000,
+  top: "-100%",
   ease: Expo.easeInOut,
 });
 
 TweenMax.to('.over-2', 1, {
   delay: 0.5,
-  y: -1000,
+  top: "-100%",
   ease: Expo.easeInOut,
 });
 
 TweenMax.to('.over-3', 1, {
   delay: 0.7,
-  y: -1000,
+  top: "-100%",
   ease: Expo.easeInOut,
+});
+
+TweenMax.to('.overlay', 1, {
+  delay: 1,
+  zindex:-1,
 });
