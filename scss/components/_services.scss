@@ -1,0 +1,39 @@
+.services{
+    &__block{
+        margin-left:-18px;
+    }
+    &__item{
+        margin-left:34px;
+        text-align: center;
+        background-color: #fff;
+        border: 1px solid transparent;
+        border-radius: 20px;
+        box-shadow:0 4px 10px 0 #333;
+        transition: 0.3s;
+        &:hover{
+            background-color: $color-orange;
+        }
+    }
+
+    &__icon{
+        margin-top: 42px;
+        background-color: #fff;
+        border: 1px solid transparent;
+        border-radius: 15px;
+        width: 130px;
+        height: 95px;
+        padding: 15px;
+    }
+
+    &__title{
+        @include font($font-poppins, 30px);
+        margin-top: 36px;
+        margin-bottom: 24px;
+    }
+
+    &__description{
+        @include font($font-poppins, 16px);
+        padding: 0 34px;
+        margin-bottom: 34px;
+    }
+}

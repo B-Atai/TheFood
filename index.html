@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./css/index.css"/>
   </head>
   <body>
+    <!-- header -->
     <header class="header">
       <div class="container">
         <div class="header__row">
@@ -41,12 +42,13 @@
         </div>
       </div>
     </header>
-    <!-- <div class="overlay">
+    <div class="overlay">
       <div class="over-1"></div>
       <div class="over-2"></div>
       <div class="over-3"></div>
-    </div> -->
+    </div>
     <main>
+      <!-- hero -->
         <section class="hero">
             <div class="container">
                 <div class="container relative">
@@ -80,6 +82,7 @@
                 </div>
             </div>
         </section>
+        <!-- categories -->
         <section class="categories">
           <div class="container">
             <div class="categories__top">
@@ -93,33 +96,15 @@
             <div class="row categories__row">
               <div class="col-4">
                 <div class="categories__item">
-                  <img src="./images/categories-1.png" alt="" />
-                  <a href="" class="categories__link">
-                    <span class="categories__type">Sandwich</span>
-                    <span class="arrow categories__arrow"
-                      ><svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="29.122"
-                        height="25.482"
-                        viewBox="0 0 29.122 25.482"
-                      >
-                        <path
-                          id="arrow-left"
-                          d="M19.094,5.533a1.82,1.82,0,0,0,0,2.574l7.814,7.814H5.82a1.82,1.82,0,1,0,0,3.64H26.908l-7.814,7.814a1.82,1.82,0,0,0,2.574,2.574L32.589,19.028a1.82,1.82,0,0,0,0-2.574L21.668,5.533A1.82,1.82,0,0,0,19.094,5.533Z"
-                          transform="translate(-4 -5)"
-                          fill-rule="evenodd"
-                        />
-                      </svg>
-                    </span>
-                  </a>
-                </div>
-              </div>
-              <div class="col-4">
-                <div class="categories__item">
-                  <img src="./images/categories-2.png" alt="" />
-                  <a href="" class="categories__link">
+                  <img src="./images/categories-3.png" alt="" />
+                  <div href="" class="categories__link is-backward">
                     <span class="categories__type">Fast Food</span>
-                    <span class="arrow categories__arrow"
+                    <p class="categories__text">
+                      Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные
+                      тексты. Букв буквенных вопроса подзаголовок он всеми. Живет имеет взобравшись
+                      толку!
+                    </p>
+                    <span class="arrow categories__arrow is-backward"
                       ><svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="29.122"
@@ -134,15 +119,21 @@
                         />
                       </svg>
                     </span>
-                  </a>
+                  </div>
+                  <a class="categories__checkout" href="atai.html">Check out</a>
                 </div>
               </div>
               <div class="col-4">
                 <div class="categories__item">
                   <img src="./images/categories-3.png" alt="" />
-                  <a href="" class="categories__link">
+                  <div href="" class="categories__link is-backward">
                     <span class="categories__type">Fast Food</span>
-                    <span class="arrow categories__arrow"
+                    <p class="categories__text">
+                      Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные
+                      тексты. Букв буквенных вопроса подзаголовок он всеми. Живет имеет взобравшись
+                      толку!
+                    </p>
+                    <span class="arrow categories__arrow is-backward"
                       ><svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="29.122"
@@ -157,15 +148,86 @@
                         />
                       </svg>
                     </span>
-                  </a>
+                  </div>
+                  <a class="categories__checkout" href="atai.html">Check out</a>
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="categories__item">
+                  <img src="./images/categories-3.png" alt="" />
+                  <div href="" class="categories__link is-backward">
+                    <span class="categories__type">Fast Food</span>
+                    <p class="categories__text">
+                      Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные
+                      тексты. Букв буквенных вопроса подзаголовок он всеми. Живет имеет взобравшись
+                      толку!
+                    </p>
+                    <span class="arrow categories__arrow is-backward"
+                      ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="29.122"
+                        height="25.482"
+                        viewBox="0 0 29.122 25.482"
+                      >
+                        <path
+                          id="arrow-left"
+                          d="M19.094,5.533a1.82,1.82,0,0,0,0,2.574l7.814,7.814H5.82a1.82,1.82,0,1,0,0,3.64H26.908l-7.814,7.814a1.82,1.82,0,0,0,2.574,2.574L32.589,19.028a1.82,1.82,0,0,0,0-2.574L21.668,5.533A1.82,1.82,0,0,0,19.094,5.533Z"
+                          transform="translate(-4 -5)"
+                          fill-rule="evenodd"
+                        />
+                      </svg>
+                    </span>
+                  </div>
+                  <a class="categories__checkout" href="atai.html">Check out</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- services -->
+        <section class="services">
+          <div class="container">
+            <div class="services__header section__header">
+              <h3 class="services__title section__title">What Our Spiz Services</h3>
+              <p class="services__description section__description">
+                There are many variations of passages of Lorem Ipsum available, but the majority have
+                suffered alteration in some form, by injected humour, or randomised words which don't
+                look even slightly bel
+              </p>
+            </div>
+            <div class="row services__block">
+              <div class="col-4">
+                <div class="services__item">
+                  <img src="./images/services__img1.svg" alt="" class="services__icon" />
+                  <h5 class="services__title">Discount Voucher</h5>
+                  <p class="services__description">
+                    There are many variations of passages of Lorem Ipsum available, but the majority
+                    have suffered alteration in some form, by injected humour, or randomised words
+                    which don't look even slightly bel
+                  </p>
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="services__item">
+                  <img src="./images/services__img2.svg" alt="" class="services__icon" />
+                  <h5 class="services__title">Fresh & Healthy Food</h5>
+                  <p class="services__description">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly bel</p>
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="services__item">
+                  <img src="./images/services__img2.svg" alt="" class="services__icon" />
+                  <h5 class="services__title">Fast Home Delivery</h5>
+                  <p class="services__description">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly bel</p>
                 </div>
               </div>
             </div>
           </div>
         </section>
     </main>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+    <script src="./js/TweenMax.min.js"></script>
+    <script src="./js/parallax.min.js"></script>
+    <script src="./js/click.js"></script>
     <script src="./js/index.js"></script>
   </body>
 </html>
