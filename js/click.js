@@ -26,3 +26,17 @@ for (let aydai = 0; aydai < 3; aydai++) {
     eraly()
   });
 }
+
+function sortSection(){
+  const sortItems = document.getElementsByClassName('filter__items')
+  let sortArray = Array.from(sortItems);
+  sortArray.forEach((item) => {
+    item.addEventListener('click', () => {
+      sortArray.forEach((i) => {
+        i.classList.remove('filter__items--active');
+      });
+      item.classList.add('filter__items--active');
+    })
+  });
+}
+sortSection();

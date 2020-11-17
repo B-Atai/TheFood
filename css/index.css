@@ -647,18 +647,20 @@ span {
   background-color: #fff;
   border: 1px solid transparent;
   border-radius: 20px;
-  box-shadow: 0 4px 10px 0 #333;
+  box-shadow: 0 8px 14px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
 }
 
 .services__item:hover {
+  margin-top: -10px;
   background-color: #ffbe00;
+  box-shadow: 0 8px 14px 0 rgba(255, 190, 0, 0.2);
 }
 
 .services__icon {
   margin-top: 42px;
   background-color: #fff;
-  border: 1px solid transparent;
+  border: 1px solid #222222;
   border-radius: 15px;
   width: 130px;
   height: 95px;
@@ -666,18 +668,61 @@ span {
 }
 
 .services__title {
-  font-family: "Poppins", sans-serif;
-  font-size: 30px;
-  font-weight: 400;
   margin-top: 36px;
   margin-bottom: 24px;
 }
 
 .services__description {
-  font-family: "Poppins", sans-serif;
-  font-size: 16px;
-  font-weight: 400;
   padding: 0 34px;
   margin-bottom: 34px;
+}
+
+.sort__filter {
+  justify-content: center;
+  margin-bottom: 200px;
+}
+
+.sort .filter__items {
+  margin-left: 65px;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: #707070;
+}
+
+.sort .filter__items:nth-child(1) {
+  margin: 0;
+}
+
+.sort .filter__items--active {
+  position: relative;
+  color: #ffbe00;
+  transition: 0.3s;
+}
+
+.sort .filter__items--active::before {
+  content: '';
+  position: absolute;
+  bottom: -14px;
+  left: 50%;
+  transform: translate(-50%);
+  width: 14px;
+  height: 12px;
+  background-image: url(../../images/triangle.svg);
+  animation: triangle 0.3s forwards ease-in-out;
+}
+
+@keyframes triangle {
+  0% {
+    bottom: -22px;
+    opacity: 0;
+  }
+  50% {
+    bottom: -8px;
+  }
+  100% {
+    bottom: -14px;
+    opacity: 1;
+  }
 }
 /*# sourceMappingURL=index.css.map */
