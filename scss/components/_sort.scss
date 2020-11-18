@@ -1,9 +1,7 @@
 .sort {
     &__filter {
         justify-content: center;
-        margin-bottom: 200px;
     }
-
     .filter {
         &__items {
             margin-left: 65px;
@@ -30,6 +28,73 @@
                     animation:triangle 0.3s forwards ease-in-out;
                 }
             }
+        }
+    }
+    &__row {
+        padding-top: 105px;
+        margin:0 -25px;
+	}
+	&__info {
+		padding: 50px 15px 0;
+    }
+    &__lines{
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__item{
+        padding: 0 25px 45px;
+    }
+	&__picture {
+        width: 100%;
+        box-shadow: 0 9 10px 0 rgba(0, 0, 0, .2);
+	}
+	&__title {
+		@include font("Poppins", 24px, 500);
+		color: $color-black;
+	}
+	&__price {
+		@include font("Poppins", 30px, 500);
+		color: $color-orange;
+	}
+	&__description {
+		@include font("Poppins", 16px, 500);
+		margin: 15px 0 10px;
+		color: $color-spaceGray;
+    }
+    &__add{
+        background-color: $color-orange;
+        position: relative;
+        padding: 15px 30px;
+        border-radius: 8px;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        &:hover{
+            border: 2px solid $color-orange;
+            background-color: #fff;
+            &::before, &::after{
+                background-color: $color-orange;
+            }
+        }
+        &::before,
+        &::after{
+            content: '';
+            position: absolute;
+            background-color: #fff;
+            width: 24px;    
+            height: 5px;
+            border-radius: 4px;
+        }
+        &::before{
+            width: 30px; 
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        &::after{
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) rotate(90deg);
         }
     }
 }

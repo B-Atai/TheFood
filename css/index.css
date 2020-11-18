@@ -37,6 +37,7 @@ span {
 
 .row {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .btn {
@@ -124,6 +125,10 @@ span {
   src: url("../fonts/Fresh_Cream.eot?") format("eot"), url("../fonts/Fresh_Cream.woff") format("woff"), url("../fonts/") format("truetype"), url("../fonts/") format("svg");
   font-weight: normal;
   font-style: normal;
+}
+
+.col-3 {
+  width: 25%;
 }
 
 .col-4 {
@@ -679,7 +684,6 @@ span {
 
 .sort__filter {
   justify-content: center;
-  margin-bottom: 200px;
 }
 
 .sort .filter__items {
@@ -710,6 +714,92 @@ span {
   height: 12px;
   background-image: url(../../images/triangle.svg);
   animation: triangle 0.3s forwards ease-in-out;
+}
+
+.sort__row {
+  padding-top: 105px;
+  margin: 0 -25px;
+}
+
+.sort__info {
+  padding: 50px 15px 0;
+}
+
+.sort__lines {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sort__item {
+  padding: 0 25px 45px;
+}
+
+.sort__picture {
+  width: 100%;
+  box-shadow: 0 9 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+.sort__title {
+  font-family: "Poppins";
+  font-size: 24px;
+  font-weight: 500;
+  color: #222222;
+}
+
+.sort__price {
+  font-family: "Poppins";
+  font-size: 30px;
+  font-weight: 500;
+  color: #ffbe00;
+}
+
+.sort__description {
+  font-family: "Poppins";
+  font-size: 16px;
+  font-weight: 500;
+  margin: 15px 0 10px;
+  color: #707070;
+}
+
+.sort__add {
+  background-color: #ffbe00;
+  position: relative;
+  padding: 15px 30px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.sort__add:hover {
+  border: 2px solid #ffbe00;
+  background-color: #fff;
+}
+
+.sort__add:hover::before, .sort__add:hover::after {
+  background-color: #ffbe00;
+}
+
+.sort__add::before, .sort__add::after {
+  content: '';
+  position: absolute;
+  background-color: #fff;
+  width: 24px;
+  height: 5px;
+  border-radius: 4px;
+}
+
+.sort__add::before {
+  width: 30px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.sort__add::after {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(90deg);
 }
 
 @keyframes triangle {
