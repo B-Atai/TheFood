@@ -17,6 +17,10 @@
 		color: $color-spaceGray;
 		max-width: 400px;
 	}
+	&__list--last{
+		display: flex;
+		margin-top: 50px;
+	}
 	&__list li {
 		margin-top: 10px;
 	}
@@ -24,6 +28,14 @@
 		@include font($font-poppins, 16px, 500);
 		line-height: 157%;
 		color: $color-black;
+		display: flex;
+		align-items: center;
+	}
+	&__contacts{
+		padding-right: 10px;
+	}
+	&__follow{
+		padding-right: 50px;
 	}
 	&__form {
 		padding-top: 90px;
@@ -56,6 +68,7 @@
 		}
 	}
 	&__copyright {
+		text-align: center;
 		@include font($font-poppins, 16px, 400);
 		color: $color-white;
 	}
