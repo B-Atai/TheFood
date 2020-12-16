@@ -878,10 +878,10 @@ span {
 .sort .checkmark--active {
   display: block;
   opacity: 0;
-  animation: 0.3s vis 0s linear forwards;
+  animation: 0.3s eraly 0s linear forwards;
 }
 
-@keyframes vis {
+@keyframes eraly {
   from {
     opacity: 0;
   }
@@ -1400,4 +1400,3 @@ span {
 .slick-arrow.slick-hidden {
   display: none;
 }
-/*# sourceMappingURL=index.css.map */
